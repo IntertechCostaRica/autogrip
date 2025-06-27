@@ -213,99 +213,81 @@
     </section>
 
     <section id="contact" class="section-padding">
-      <div class="container">
-        <h2>Contáctanos</h2>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <p>
-              <i class="fas fa-envelope icon-small"></i>
-              <strong>Correo Electrónico:</strong>
-              <a href="mailto:caftecauto@gmail.com">caftecauto@gmail.com</a>
-            </p>
-            <p>
-              <i class="fab fa-whatsapp icon-small"></i>
-              <strong>Teléfono/WhatsApp:</strong>
-              <a href="https://wa.me/50661515350" target="_blank"
-                >+506 6151 5350</a
-              >
-            </p>
-            <p>
-              <i class="fas fa-map-marker-alt icon-small"></i>
-              <strong>Dirección:</strong> Paquita de Quepos, Puntarenas, Costa
-              Rica, 60504
-            </p>
-            <a
-              href="https://wa.me/50661515350"
-              class="btn btn-whatsapp"
-              target="_blank"
-            >
-              <i class="fab fa-whatsapp"></i> Envíanos un WhatsApp
-            </a>
-          </div>
-          <div class="contact-form">
-            <h3>Envíanos un Mensaje</h3>
-            <form
-              action="https://formsubmit.co/CAFTEC@example.com"
-              method="POST"
-            >
-              <!-- Reemplaza CAFTEC@example.com por tu correo real -->
-              <input type="hidden" name="_captcha" value="https://intertechcostarica.github.io/autogrip/" />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://tu-sitio.com/gracias.html"
-              />
-              <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Enviar Mensaje
-              </button>
-            </form>
-            <p class="form-note">
-              Este formulario enviará tu mensaje directamente a nuestro correo
-              electrónico.
-            </p>
-          </div>
-        </div>
+  <div class="container">
+    <h2>Contáctanos</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>
+          <i class="fas fa-envelope icon-small"></i>
+          <strong>Correo Electrónico:</strong>
+          <a href="mailto:caftecauto@gmail.com">caftecauto@gmail.com</a>
+        </p>
+        <p>
+          <i class="fab fa-whatsapp icon-small"></i>
+          <strong>Teléfono/WhatsApp:</strong>
+          <a href="https://wa.me/50661515350" target="_blank">+506 6151 5350</a>
+        </p>
+        <p>
+          <i class="fas fa-map-marker-alt icon-small"></i>
+          <strong>Dirección:</strong> Paquita de Quepos, Puntarenas, Costa Rica, 60504
+        </p>
+        <a href="https://wa.me/50661515350" class="btn btn-whatsapp" target="_blank">
+          <i class="fab fa-whatsapp"></i> Envíanos un WhatsApp
+        </a>
       </div>
-    </section>
 
-    <footer>
-      <div class="container">
-        <p>© 2025 Auto Grip. Todos los derechos reservados.</p>
-        <p>Conduciendo la excelencia en Quepos, Costa Rica.</p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/CAFTecAuto" target="_blank"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="https://wa.me/50661515350" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://wa.me/50661515350" target="_blank"
-            ><i class="fab fa-tiktok"></i
-          ></a>
+      <div class="contact-form">
+        <h3>Envíanos un Mensaje</h3>
+        <form id="contactForm" action="https://formsubmit.co/caftecauto@gmail.com" method="POST">
+          <!-- FormSubmit Config -->
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://intertechcostarica.github.io/autogrip/#gracias" />
+
+          <!-- Campos del formulario -->
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+
+        <!-- Mensaje dinámico de agradecimiento -->
+        <div id="gracias" style="display: none; margin-top: 20px;" class="form-note">
+          ✅ ¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente.
         </div>
       </div>
-    </footer>
-    <script>
-  // Muestra el mensaje si la URL contiene #gracias
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2025 Auto Grip. Todos los derechos reservados.</p>
+    <p>Conduciendo la excelencia en Quepos, Costa Rica.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/CAFTecAuto" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/50661515350" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/50661515350" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mostrar mensaje si la URL tiene #gracias y limpiar el formulario
   if (window.location.hash === "#gracias") {
-    document.getElementById("gracias").style.display = "block";
+    const graciasMsg = document.getElementById("gracias");
+    if (graciasMsg) graciasMsg.style.display = "block";
+
+    const form = document.getElementById("contactForm");
+    if (form) form.reset();
   }
 </script>
   </body>
