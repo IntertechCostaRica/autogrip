@@ -249,7 +249,7 @@
               method="POST"
             >
               <!-- Reemplaza CAFTEC@example.com por tu correo real -->
-              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_captcha" value="https://intertechcostarica.github.io/autogrip/" />
               <input
                 type="hidden"
                 name="_next"
@@ -302,5 +302,11 @@
         </div>
       </div>
     </footer>
+    <script>
+  // Muestra el mensaje si la URL contiene #gracias
+  if (window.location.hash === "#gracias") {
+    document.getElementById("gracias").style.display = "block";
+  }
+</script>
   </body>
 </html>
